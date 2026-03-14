@@ -1,40 +1,46 @@
 project:
   type: website
   output-dir: docs
-  render:
-    - index.qmd
 
 website:
   title: "BS.CK2. Đỗ Thanh Liêm"
+  site-url: https://bsliem.github.io/
+
   navbar:
     left:
       - href: index.qmd
         text: Trang chủ
-      - href: "#gioi-thieu"
+
+      - href: about.qmd
         text: Giới thiệu
-      - href: "#ho-so"
-        text: Hồ sơ
-      - href: "#chuyen-mon"
-        text: Chuyên môn
-      - href: "#hoat-dong"
-        text: Hoạt động hỗ trợ
-      - href: "#nghien-cuu"
+
+      - href: research.qmd
         text: Nghiên cứu
-      - href: "#cong-trinh"
-        text: Công trình
-      - href: "#lich-kham"
-        text: Lịch khám
-      - href: "#lien-he"
+
+      - href: posts.qmd
+        text: Bài viết
+
+      - href: booking.qmd
+        text: Đặt lịch khám
+
+      - href: contact.qmd
         text: Liên hệ
+
+    right:
+      - icon: github
+        href: https://github.com/bsliem
+
+  page-footer:
+    center: |
+      © BS.CK2. Đỗ Thanh Liêm  
+      Website học thuật và thông tin khám bệnh
 
 format:
   html:
-    theme: none
+    theme: cosmo
     css: styles.css
     toc: false
     smooth-scroll: true
 
 execute:
-  echo: false
-  warning: false
-  message: false
+  freeze: auto

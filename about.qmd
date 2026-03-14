@@ -1,24 +1,57 @@
-## Hồ sơ chuyên môn {#ho-so}
+---
+title: "Hồ sơ chuyên môn"
+page-layout: full
+---
 
-### Quá trình đào tạo
+::: {.hero}
 
-- **1993 – 1999:** Học viên chính quy Đại học Y khoa Hà Nội
-- **2006:** Tu nghiệp chuyên ngành Nội khoa tại Israel
-- **2013:** Tu nghiệp chuyên ngành Nội khoa tại Đài Loan
-- **2007 – 2009:** Thạc sĩ Y khoa, Đại học Y Dược TP. Hồ Chí Minh
-- **2019 – 2021:** Bác sĩ Chuyên khoa II, chuyên ngành Y học cổ truyền, Đại học Y Dược TP. Hồ Chí Minh
+# BS.CK2. Đỗ Thanh Liêm
 
-### Kinh nghiệm chuyên môn
+Bác sĩ chuyên ngành **Y học cổ truyền – Thần kinh – Sa sút trí tuệ**,  
+hiện công tác tại **Bệnh viện 30-4, Bộ Công an – TP.HCM**.
 
-- Trưởng khoa Y học cổ truyền – Bệnh viện 30-4, Bộ Công an
-- Trưởng nhóm thực hiện test thần kinh tâm lý nhận thức – Đơn vị Trí nhớ và Sa sút trí tuệ, Bệnh viện 30-4
-- Thành viên Hội Alzheimer và Rối loạn nhận thức TP. Hồ Chí Minh
+Định hướng chuyên môn tập trung vào **chăm sóc người bệnh mạn tính, người cao tuổi, và hỗ trợ nhận diện sớm các rối loạn nhận thức**, kết hợp giữa **Y học cổ truyền và tiếp cận lâm sàng hiện đại**.
 
-### Lĩnh vực sở trường nghiên cứu
+:::
 
-- Sa sút trí tuệ và suy giảm nhận thức
-- Ứng dụng Y học cổ truyền trong thực hành lâm sàng
-- Nghiên cứu về Thương hàn luận và Hoàng Đế Nội Kinh
-- Phân tích dữ liệu y khoa bằng ngôn ngữ **R**
+::: {.card-box}
 
-Tham khảo thêm: [YouMed]({{< var youmed_url >}})
+## Quá trình đào tạo
+
+- **1993 – 1999:** Đại học Y khoa Hà Nội  
+- **2006:** Tu nghiệp chuyên ngành Nội khoa – Israel  
+- **2013:** Tu nghiệp chuyên ngành Nội khoa – Đài Loan  
+- **2007 – 2009:** Thạc sĩ Y khoa – Đại học Y Dược TP.HCM  
+- **2019 – 2021:** Bác sĩ **Chuyên khoa II – Y học cổ truyền**, Đại học Y Dược TP.HCM  
+
+:::
+
+::: {.card-box}
+
+## Kinh nghiệm chuyên môn
+
+- **Trưởng khoa Y học cổ truyền** – Bệnh viện 30-4, Bộ Công an  
+- **Trưởng nhóm thực hiện test thần kinh tâm lý nhận thức** –  
+  Đơn vị Trí nhớ và Sa sút trí tuệ, Bệnh viện 30-4  
+- **Thành viên** – Hội Alzheimer và Rối loạn nhận thức TP.HCM  
+
+:::
+
+::: {.card-box}
+
+## Lĩnh vực sở trường nghiên cứu
+
+- **Sa sút trí tuệ và suy giảm nhận thức**
+- **Ứng dụng Y học cổ truyền trong thực hành lâm sàng**
+- **Nghiên cứu Thương hàn luận và Hoàng Đế Nội Kinh**
+- **Phân tích dữ liệu y khoa bằng ngôn ngữ R**
+
+:::
+
+::: {.card-box}
+
+## Thông tin thêm
+
+🔗 **YouMed:** [Xem hồ sơ]({{< var youmed_url >}})
+
+:::
