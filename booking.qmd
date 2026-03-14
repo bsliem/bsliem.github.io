@@ -1,16 +1,44 @@
 ## Lịch khám {#lich-kham}
 
-Lịch khám có thể thay đổi tùy theo công việc chuyên môn tại bệnh viện. Vui lòng liên hệ trước để được hướng dẫn cụ thể.
+### Dịch vụ khám chữa bệnh
 
-### Lịch khám dự kiến
+- Khám bệnh **Y học cổ truyền**
+- **Châm cứu – bấm huyệt**
+- **Chườm ngải cứu**
+- Điều trị bằng **thuốc hoàn, thuốc sắc**
 
-- **Thứ 2 – Thứ 6:** Khám theo lịch tại bệnh viện
-- **Thứ 7:** Tư vấn và hỗ trợ theo hẹn trước
+---
+
+### Thời gian khám
+
+- **Thứ 2 – Thứ 6:** 17:00 – 18:30  
+- **Thứ 7:** Tư vấn và hỗ trợ theo hẹn trước  
 - **Chủ nhật:** Nghỉ
+
+---
 
 ### Hướng dẫn khi đến khám
 
-- Người bệnh nên mang theo hồ sơ bệnh án trước đây nếu có
-- Với người cao tuổi hoặc nghi ngờ suy giảm trí nhớ nên đi cùng người thân
-- Nên ghi lại các triệu chứng hoặc thay đổi trí nhớ trong thời gian gần đây
-- Liên hệ trước để được hướng dẫn thời gian phù hợp
+- Người bệnh nên **gọi điện hoặc nhắn Zalo trước** để được sắp xếp thời gian khám.
+
+📞 **Điện thoại / Zalo:** 0985661908
+
+---
+
+### Địa chỉ phòng khám
+
+🏠 **167 Đông Minh, Phường Dĩ An, TP Hồ Chí Minh**
+
+[📍 Xem trên Google Maps](https://www.google.com/maps?cid=18185524446088119388)
+
+---
+
+### Bản đồ
+
+<iframe
+  src="https://www.google.com/maps?cid=18185524446088119388&hl=en-GB&source=embed"
+  width="100%"
+  height="450"
+  style="border:0;"
+  loading="lazy">
+</iframe>
