@@ -1,0 +1,24 @@
+## Hồ sơ chuyên môn {#ho-so}
+
+### Quá trình đào tạo
+
+- **1993 – 1999:** Học viên chính quy Đại học Y khoa Hà Nội
+- **2006:** Tu nghiệp chuyên ngành Nội khoa tại Israel
+- **2013:** Tu nghiệp chuyên ngành Nội khoa tại Đài Loan
+- **2007 – 2009:** Thạc sĩ Y khoa, Đại học Y Dược TP. Hồ Chí Minh
+- **2019 – 2021:** Bác sĩ Chuyên khoa II, chuyên ngành Y học cổ truyền, Đại học Y Dược TP. Hồ Chí Minh
+
+### Kinh nghiệm chuyên môn
+
+- Trưởng khoa Y học cổ truyền – Bệnh viện 30-4, Bộ Công an
+- Trưởng nhóm thực hiện test thần kinh tâm lý nhận thức – Đơn vị Trí nhớ và Sa sút trí tuệ, Bệnh viện 30-4
+- Thành viên Hội Alzheimer và Rối loạn nhận thức TP. Hồ Chí Minh
+
+### Lĩnh vực sở trường nghiên cứu
+
+- Sa sút trí tuệ và suy giảm nhận thức
+- Ứng dụng Y học cổ truyền trong thực hành lâm sàng
+- Nghiên cứu về Thương hàn luận và Hoàng Đế Nội Kinh
+- Phân tích dữ liệu y khoa bằng ngôn ngữ **R**
+
+Tham khảo thêm: [YouMed]({{< var youmed_url >}})

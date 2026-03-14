@@ -1,0 +1,12 @@
+---
+title: "Bài viết"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+---
+
+Các bài viết chuyên môn và chia sẻ y học.

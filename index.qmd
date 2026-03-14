@@ -1,55 +1,11 @@
----
-title: "{{< var name >}}"
-page-layout: full
-format: html
----
+## Giới thiệu {#gioi-thieu}
 
-# {{< var name >}}
+Website này giới thiệu định hướng chuyên môn của **{{< var name >}}** theo mô hình chăm sóc gần gũi, thực tế và toàn diện, trong đó **Y học cổ truyền** giữ vai trò trung tâm.
 
-## {{< var subtitle >}}
+### Định hướng chuyên môn
 
-::: {.hero-section}
+Tập trung vào Y học cổ truyền trong chăm sóc người bệnh mạn tính, người cao tuổi và các trường hợp cần theo dõi dài hạn. Hướng tiếp cận chú trọng sự điều hòa thân – tâm, theo dõi sát thực tế sinh hoạt và chất lượng sống của người bệnh.
 
-Tập trung vào **Y học cổ truyền**, **tầm soát sa sút trí tuệ** và hỗ trợ người bệnh cao tuổi theo hướng chăm sóc toàn diện.
+### Định hướng hỗ trợ sa sút trí tuệ
 
-Quan tâm đặc biệt đến:
-
-- Người bệnh suy giảm nhận thức
-- Hỗ trợ người chăm sóc
-- Hoạt động trị liệu
-- Khí công – dưỡng sinh
-- Chăm sóc tinh thần qua thiền, cầu nguyện, chanting chú, kinh Phật và thánh ca
-
-:::
-
----
-
-{{< include my_md/01_gioi_thieu.qmd >}}
-
----
-
-{{< include my_md/02_ho_so.qmd >}}
-
----
-
-{{< include my_md/03_chuyen_mon.qmd >}}
-
----
-
-{{< include my_md/04_hoat_dong.qmd >}}
-
----
-
-{{< include my_md/05_nghien_cuu.qmd >}}
-
----
-
-{{< include my_md/06_cong_trinh.qmd >}}
-
----
-
-{{< include my_md/07_lich_kham.qmd >}}
-
----
-
-{{< include my_md/08_lien_he.qmd >}}
+Không nhấn mạnh điều trị chuyên sâu thần kinh, mà tập trung vào **tầm soát ban đầu**, nhận diện sớm các dấu hiệu suy giảm trí nhớ, hỗ trợ người chăm sóc, và tổ chức các hoạt động trị liệu phù hợp cho người bệnh sa sút trí tuệ.
