@@ -1,0 +1,19 @@
+bsliem.github.io/
+├─ bsliem.github.io.Rproj
+├─ _quarto.yml
+├─ _variables.yml
+├─ styles.css
+├─ index.qmd
+├─ README.md
+├─ .nojekyll
+├─ my_md/
+│  ├─ 01_gioi_thieu.qmd
+│  ├─ 02_ho_so.qmd
+│  ├─ 03_chuyen_mon.qmd
+│  ├─ 04_hoat_dong.qmd
+│  ├─ 05_nghien_cuu.qmd
+│  ├─ 06_cong_trinh.qmd
+│  ├─ 07_lich_kham.qmd
+│  └─ 08_lien_he.qmd
+└─ docs/
+   └─ (Quarto render ra đây)

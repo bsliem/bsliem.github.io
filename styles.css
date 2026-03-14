@@ -1,0 +1,64 @@
+:root {
+  --primary: #0f4c81;
+  --secondary: #1f7a8c;
+  --accent: #eef6fc;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #dbe4ee;
+  --bg: #f7fbff;
+  --radius: 18px;
+  --shadow: 0 12px 30px rgba(15, 76, 129, 0.08);
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(31,122,140,0.07), transparent 28%),
+    linear-gradient(to bottom, #f7fbff 0%, #ffffff 38%);
+  line-height: 1.75;
+}
+
+h1, h2, h3 {
+  color: #10253f;
+}
+
+.hero-section {
+  padding: 2rem 0 1rem 0;
+}
+
+.hero-section h1 {
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  margin-bottom: 0.5rem;
+}
+
+.hero-section h2 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+section {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.4rem 1.4rem;
+  margin: 1.25rem 0;
+  box-shadow: var(--shadow);
+}
+
+a {
+  color: var(--primary);
+}
+
+blockquote {
+  border-left: 4px solid var(--secondary);
+  background: var(--accent);
+  padding: 0.8rem 1rem;
+  border-radius: 0 12px 12px 0;
+  color: var(--text);
+}
+
+ul li {
+  margin-bottom: 0.4rem;
+}

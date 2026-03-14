@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - index.qmd
+
+website:
+  title: "BS.CK2. Đỗ Thanh Liêm"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Trang chủ
+      - href: "#gioi-thieu"
+        text: Giới thiệu
+      - href: "#ho-so"
+        text: Hồ sơ
+      - href: "#chuyen-mon"
+        text: Chuyên môn
+      - href: "#hoat-dong"
+        text: Hoạt động hỗ trợ
+      - href: "#nghien-cuu"
+        text: Nghiên cứu
+      - href: "#cong-trinh"
+        text: Công trình
+      - href: "#lich-kham"
+        text: Lịch khám
+      - href: "#lien-he"
+        text: Liên hệ
+
+format:
+  html:
+    theme: none
+    css: styles.css
+    toc: false
+    smooth-scroll: true
+
+execute:
+  echo: false
+  warning: false
+  message: false

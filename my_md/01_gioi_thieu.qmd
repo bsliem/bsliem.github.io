@@ -1,0 +1,11 @@
+## Giới thiệu {#gioi-thieu}
+
+Website này giới thiệu định hướng chuyên môn của **{{< var name >}}** theo mô hình chăm sóc gần gũi, thực tế và toàn diện, trong đó **Y học cổ truyền** giữ vai trò trung tâm.
+
+### Định hướng chuyên môn
+
+Tập trung vào Y học cổ truyền trong chăm sóc người bệnh mạn tính, người cao tuổi và các trường hợp cần theo dõi dài hạn. Hướng tiếp cận chú trọng sự điều hòa thân – tâm, theo dõi sát thực tế sinh hoạt và chất lượng sống của người bệnh.
+
+### Định hướng hỗ trợ sa sút trí tuệ
+
+Không nhấn mạnh điều trị chuyên sâu thần kinh, mà tập trung vào **tầm soát ban đầu**, nhận diện sớm các dấu hiệu suy giảm trí nhớ, hỗ trợ người chăm sóc, và tổ chức các hoạt động trị liệu phù hợp cho người bệnh sa sút trí tuệ.

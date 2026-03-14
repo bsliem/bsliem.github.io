@@ -1,0 +1,9 @@
+## Liên hệ {#lien-he}
+
+- **Đơn vị:** {{< var hospital >}}
+- **Email:** [{{< var email >}}](mailto:{{< var email >}})
+- **Điện thoại:** [{{< var phone >}}](tel:+84000000000)
+- **YouMed:** [Trang đặt khám]({{< var youmed_url >}})
+- **Website:** [{{< var website_url >}}]({{< var website_url >}})
+
+> Website này nhằm giới thiệu định hướng chuyên môn và học thuật. Nội dung sẽ tiếp tục được cập nhật để phục vụ tốt hơn cho người bệnh, gia đình và cộng đồng quan tâm.
