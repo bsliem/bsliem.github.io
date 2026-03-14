@@ -1,11 +1,43 @@
-## Giới thiệu {#gioi-thieu}
+---
+title: ""
+page-layout: full
+---
 
-Website này giới thiệu định hướng chuyên môn của **{{< var name >}}** theo mô hình chăm sóc gần gũi, thực tế và toàn diện, trong đó **Y học cổ truyền** giữ vai trò trung tâm.
+::: {.hero}
+# BS.CK2. Đỗ Thanh Liêm
 
-### Định hướng chuyên môn
+Bác sĩ chuyên ngành **Y học cổ truyền – Thần kinh – Sa sút trí tuệ**.  
+Website giới thiệu chuyên môn, hoạt động học thuật, bài viết chuyên đề và thông tin đặt lịch khám.
 
-Tập trung vào Y học cổ truyền trong chăm sóc người bệnh mạn tính, người cao tuổi và các trường hợp cần theo dõi dài hạn. Hướng tiếp cận chú trọng sự điều hòa thân – tâm, theo dõi sát thực tế sinh hoạt và chất lượng sống của người bệnh.
+[Giới thiệu](about.qmd){.btn .btn-primary}
+[Bài viết](posts.qmd){.btn .btn-outline-primary}
+[Đặt lịch khám](booking.qmd){.btn .btn-outline-primary}
+:::
 
-### Định hướng hỗ trợ sa sút trí tuệ
+::: {.card-box}
+## Lĩnh vực chuyên môn
 
-Không nhấn mạnh điều trị chuyên sâu thần kinh, mà tập trung vào **tầm soát ban đầu**, nhận diện sớm các dấu hiệu suy giảm trí nhớ, hỗ trợ người chăm sóc, và tổ chức các hoạt động trị liệu phù hợp cho người bệnh sa sút trí tuệ.
+- Y học cổ truyền
+- Thần kinh học
+- Sa sút trí tuệ
+- Đánh giá nhận thức lâm sàng
+:::
+
+::: {.card-box}
+## Định hướng website
+
+- Giới thiệu hồ sơ chuyên môn và hoạt động học thuật
+- Cập nhật bài viết chuyên môn, dễ đọc cho người bệnh và đồng nghiệp
+- Chia sẻ nội dung nghiên cứu và công trình khoa học
+- Hỗ trợ liên hệ và đặt lịch khám thuận tiện
+:::
+
+::: {.card-box}
+## Truy cập nhanh
+
+- [Hồ sơ chuyên môn](about.qmd)
+- [Nghiên cứu](research.qmd)
+- [Bài viết](posts.qmd)
+- [Đặt lịch khám](booking.qmd)
+- [Liên hệ](contact.qmd)
+:::

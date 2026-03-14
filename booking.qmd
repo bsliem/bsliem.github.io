@@ -1,39 +1,45 @@
-## Lịch khám {#lich-kham}
+---
+title: "Đặt lịch khám"
+page-layout: full
+---
 
-### Dịch vụ khám chữa bệnh
+::: {.hero}
+# Đặt lịch khám
+
+Thông tin lịch khám, địa chỉ phòng khám và hướng dẫn liên hệ trước khi đến khám.
+
+[📞 Gọi ngay](tel:0985661908){.btn .btn-primary}
+[📍 Google Maps](https://www.google.com/maps?cid=18185524446088119388){.btn .btn-outline-primary}
+:::
+
+::: {.card-box}
+## Dịch vụ khám chữa bệnh
 
 - Khám bệnh **Y học cổ truyền**
 - **Châm cứu – bấm huyệt**
-- **Chườm ngải cứu**
+- **Chườm ngải**
 - Điều trị bằng **thuốc hoàn, thuốc sắc**
+:::
 
----
-
-### Thời gian khám
+::: {.card-box}
+## Thời gian khám
 
 - **Thứ 2 – Thứ 6:** 17:00 – 18:30  
 - **Thứ 7:** Tư vấn và hỗ trợ theo hẹn trước  
 - **Chủ nhật:** Nghỉ
+:::
 
----
+::: {.card-box}
+## Liên hệ trước khi đến khám
 
-### Hướng dẫn khi đến khám
+Người bệnh nên **gọi điện hoặc nhắn Zalo trước** để được sắp xếp thời gian phù hợp.
 
-- Người bệnh nên **gọi điện hoặc nhắn Zalo trước** để được sắp xếp thời gian khám.
+- 📞 **Điện thoại / Zalo:** 0985661908
+- 🏠 **Địa chỉ:** 167 Đông Minh, Phường Dĩ An, TP Hồ Chí Minh
+:::
 
-📞 **Điện thoại / Zalo:** 0985661908
-
----
-
-### Địa chỉ phòng khám
-
-🏠 **167 Đông Minh, Phường Dĩ An, TP Hồ Chí Minh**
-
-[📍 Xem trên Google Maps](https://www.google.com/maps?cid=18185524446088119388)
-
----
-
-### Bản đồ
+::: {.card-box}
+## Bản đồ
 
 <iframe
   src="https://www.google.com/maps?cid=18185524446088119388&hl=en-GB&source=embed"
@@ -42,3 +48,4 @@
   style="border:0;"
   loading="lazy">
 </iframe>
+:::

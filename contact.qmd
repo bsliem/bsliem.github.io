@@ -1,9 +1,11 @@
 ## Liên hệ {#lien-he}
 
-- **Đơn vị:** {{< var hospital >}}
+## Liên hệ
+
+- **Công tác:** {{< var hospital >}}
+- **Phòng khám:** {{< var clinic >}}
 - **Email:** [{{< var email >}}](mailto:{{< var email >}})
-- **Điện thoại:** [{{< var phone >}}](tel:+84000000000)
-- **YouMed:** [Trang đặt khám]({{< var youmed_url >}})
+- **Điện thoại:** [{{< var phone >}}](tel:{{< var phone_tel >}})
 - **Website:** [{{< var website_url >}}]({{< var website_url >}})
 
-> Website này nhằm giới thiệu định hướng chuyên môn và học thuật. Nội dung sẽ tiếp tục được cập nhật để phục vụ tốt hơn cho người bệnh, gia đình và cộng đồng quan tâm.
+> Website này nhằm giới thiệu phòng khám YHCT Đông Y Thùy Dương và Bs Đỗ Thanh Liêm.
