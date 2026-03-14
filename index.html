@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BS.CK2. Đỗ Thanh Liêm</title>
+  <meta name="description" content="Website giới thiệu BS.CK2. Đỗ Thanh Liêm - Y học cổ truyền, Thần kinh - Sa sút trí tuệ, Da liễu. Bệnh viện 30-4, TP.HCM." />
+  <style>
+    :root {
+      --primary: #0f4c81;
+      --secondary: #1f7a8c;
+      --accent: #e8f1f8;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --white: #ffffff;
+      --border: #dbe4ee;
+      --shadow: 0 10px 30px rgba(15, 76, 129, 0.08);
+      --radius: 18px;
+      --max-width: 1100px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(to bottom, #f7fbff 0%, #ffffff 35%);
+      line-height: 1.65;
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(var(--max-width), calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      backdrop-filter: blur(10px);
+      background: rgba(255,255,255,0.9);
+      border-bottom: 1px solid rgba(219, 228, 238, 0.8);
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px 0;
+    }
+
+    .brand {
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: var(--primary);
+      letter-spacing: 0.2px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text);
+      font-weight: 600;
+      font-size: 0.96rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      font-weight: 700;
+      transition: 0.2s ease;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      background: var(--primary);
+      color: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    .btn-primary:hover {
+      text-decoration: none;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      border-color: var(--border);
+      background: var(--white);
+      color: var(--primary);
+    }
+
+    .hero {
+      padding: 64px 0 40px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 32px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--secondary);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      line-height: 1.12;
+      margin: 0 0 16px;
+      color: #10253f;
+    }
+
+    .lead {
+      font-size: 1.08rem;
+      color: var(--muted);
+      margin: 0 0 24px;
+      max-width: 680px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 22px;
+    }
+
+    .quick-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .info-card, .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .info-card {
+      padding: 16px;
+    }
+
+    .info-card strong {
+      display: block;
+      color: var(--primary);
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+
+    .doctor-card {
+      padding: 24px;
+    }
+
+    .doctor-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, #d7ebfb, #f1f7fc);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      color: var(--primary);
+      margin-bottom: 18px;
+      border: 1px solid var(--border);
+    }
+
+    section {
+      padding: 34px 0;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      margin: 0 0 10px;
+      color: #10253f;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      margin: 0 0 24px;
+      max-width: 760px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      padding: 22px;
+      height: 100%;
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.1rem;
+      color: var(--primary);
+    }
+
+    .list {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    .list li { margin-bottom: 8px; }
+
+    .contact-box {
+      background: linear-gradient(135deg, #0f4c81, #1f7a8c);
+      color: white;
+      padding: 28px;
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-box a {
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding: 28px 0 40px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .notice {
+      font-size: 0.92rem;
+      color: var(--muted);
+      background: #f7fafc;
+      border: 1px dashed var(--border);
+      padding: 14px 16px;
+      border-radius: 14px;
+      margin-top: 12px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .grid-3, .grid-2, .quick-info {
+        grid-template-columns: 1fr;
+      }
+
+      .nav {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container nav">
+      <div class="brand">BS.CK2. Đỗ Thanh Liêm</div>
+      <div class="nav-links">
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#chuyen-khoa">Chuyên khoa</a>
+        <a href="#nghien-cuu">Nghiên cứu</a>
+        <a href="#lien-he">Liên hệ</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">Website giới thiệu cá nhân</div>
+        <h1>BS.CK2. Đỗ Thanh Liêm</h1>
+        <p class="lead">
+          Chuyên khoa Y học cổ truyền, Thần kinh – Sa sút trí tuệ, Da liễu. Công tác tại Bệnh viện 30-4, TP. Hồ Chí Minh. Nghiên cứu quan tâm đến thần kinh học nhận thức, sa sút trí tuệ và đánh giá nhận thức lâm sàng.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#lien-he">Liên hệ</a>
+          <a class="btn btn-outline" href="#nghien-cuu">Xem hướng nghiên cứu</a>
+        </div>
+        <div class="quick-info">
+          <div class="info-card">
+            <strong>Đơn vị công tác</strong>
+            Bệnh viện 30-4
+          </div>
+          <div class="info-card">
+            <strong>Lĩnh vực</strong>
+            YHCT · Thần kinh · Da liễu
+          </div>
+          <div class="info-card">
+            <strong>Địa điểm</strong>
+            TP. Hồ Chí Minh
+          </div>
+        </div>
+      </div>
+
+      <div class="doctor-card info-card">
+        <div class="doctor-photo">BS</div>
+        <h2 style="margin:0 0 8px; color:#10253f;">Thông tin nổi bật</h2>
+        <p style="margin:0 0 14px; color:var(--muted);">
+          Website giới thiệu cá nhân, chuyên môn và định hướng học thuật.
+        </p>
+        <ul class="list">
+          <li>Giới thiệu bác sĩ và chuyên môn</li>
+          <li>Hướng nghiên cứu và dự án</li>
+          <li>Thông tin liên hệ và lịch hẹn</li>
+          <li>Dễ đưa lên GitHub Pages miễn phí</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="gioi-thieu">
+      <div class="container">
+        <h2 class="section-title">Giới thiệu</h2>
+        <p class="section-subtitle">
+          Đây là trang giới thiệu chính thức của BS.CK2. Đỗ Thanh Liêm. Bạn có thể dùng trang này để giới thiệu phòng khám, chuyên môn, dịch vụ tư vấn, hoạt động chuyên môn và các công trình nghiên cứu.
+        </p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Chuyên môn</h3>
+            <p>
+              Y học cổ truyền, Thần kinh – Sa sút trí tuệ, Da liễu. Hướng tiếp cận kết hợp giữa lâm sàng, đánh giá chức năng nhận thức và chăm sóc người bệnh theo nhu cầu thực tế.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Mục tiêu website</h3>
+            <p>
+              Cung cấp thông tin rõ ràng, gọn gàng và đáng tin cậy cho người bệnh, thân nhân, đồng nghiệp và đối tác học thuật.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="chuyen-khoa">
+      <div class="container">
+        <h2 class="section-title">Chuyên khoa</h2>
+        <p class="section-subtitle">
+          Bạn có thể chỉnh sửa phần này sau để thêm mô tả dịch vụ, lịch khám và nhóm bệnh thường tiếp nhận.
+        </p>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Y học cổ truyền</h3>
+            <ul class="list">
+              <li>Tư vấn và điều trị hỗ trợ theo YHCT</li>
+              <li>Theo dõi triệu chứng mạn tính</li>
+              <li>Phối hợp chăm sóc toàn diện</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Thần kinh – Sa sút trí tuệ</h3>
+            <ul class="list">
+              <li>Khám suy giảm trí nhớ</li>
+              <li>Đánh giá nhận thức lâm sàng</li>
+              <li>Theo dõi sa sút trí tuệ và người cao tuổi</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Da liễu</h3>
+            <ul class="list">
+              <li>Tư vấn bệnh da thường gặp</li>
+              <li>Theo dõi tổn thương da mạn tính</li>
+              <li>Chăm sóc và hướng dẫn điều trị</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="nghien-cuu">
+      <div class="container">
+        <h2 class="section-title">Nghiên cứu</h2>
+        <p class="section-subtitle">
+          Phần này phản ánh đúng định hướng nghiên cứu hiện tại.
+        </p>
+        <div class="grid-2">
+          <div class="card">
+            <h3>Research interests</h3>
+            <ul class="list">
+              <li>Neuropsychology</li>
+              <li>Dementia</li>
+              <li>Cognitive assessment</li>
+              <li>VnCA | MMSE | Aging brain</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Dự án và học thuật</h3>
+            <p>
+              Có thể thêm liên kết đến bài báo, GitHub repositories, tài liệu Quarto, slide học thuật hoặc các dự án liên quan đến đánh giá nhận thức và sa sút trí tuệ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="lien-he">
+      <div class="container">
+        <div class="contact-box">
+          <h2 style="margin-top:0; margin-bottom:10px;">Liên hệ</h2>
+          <p><strong>Đơn vị:</strong> Bệnh viện 30-4 – TP. Hồ Chí Minh</p>
+          <p><strong>Email:</strong> <a href="mailto:bsliem@example.com">bsliem@example.com</a></p>
+          <p><strong>Điện thoại:</strong> <a href="tel:+84000000000">0xxx xxx xxx</a></p>
+          <p><strong>Địa chỉ:</strong> Thêm địa chỉ phòng khám hoặc nơi liên hệ tại đây</p>
+          <div class="notice">
+            Bạn có thể thêm nút Zalo, Google Maps, giờ khám, ảnh phòng khám và biểu mẫu đặt lịch sau.
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      © 2026 BS.CK2. Đỗ Thanh Liêm. Website giới thiệu cá nhân trên GitHub Pages.
+    </div>
+  </footer>
+</body>
+</html>
