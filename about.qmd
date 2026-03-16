@@ -1,57 +1,39 @@
----
-title: "Hồ sơ chuyên môn"
-page-layout: full
----
+::: {.section-card}
+## Đơn vị và nền tảng website
 
-::: {.hero}
+::: {.logo-grid}
 
-# BS.CK2. Đỗ Thanh Liêm
+::: {.logo-item}
+![](images/logo304.png){height=70}
+**Bệnh viện 30-4**
+:::
 
-Bác sĩ chuyên ngành **Y học cổ truyền – Thần kinh – Sa sút trí tuệ**,  
-hiện công tác tại **Bệnh viện 30-4, Bộ Công an – TP.HCM**.
+::: {.logo-item}
+![](images/dong_y_thuy_duong_logo.jpg){height=70}
+**Phòng khám Đông y Thùy Dương**
+:::
 
-Định hướng chuyên môn tập trung vào **chăm sóc người bệnh mạn tính, người cao tuổi, và hỗ trợ nhận diện sớm các rối loạn nhận thức**, kết hợp giữa **Y học cổ truyền và tiếp cận lâm sàng hiện đại**.
+::: {.logo-item}
+![](images/quarto.png){height=40}
+Quarto
+:::
+
+::: {.logo-item}
+![](images/rlogo.png){height=40}
+R
+:::
+
+::: {.logo-item}
+![](images/posit.png){height=40}
+Posit / RStudio
+:::
+
+::: {.logo-item}
+![](images/github.png){height=40}
+GitHub Pages
+:::
 
 :::
 
-::: {.card-box}
-
-## Quá trình đào tạo
-
-- **1993 – 1999:** Đại học Y khoa Hà Nội  
-- **2006:** Tu nghiệp chuyên ngành Nội khoa – Israel  
-- **2013:** Tu nghiệp chuyên ngành Nội khoa – Đài Loan  
-- **2007 – 2009:** Thạc sĩ Y khoa – Đại học Y Dược TP.HCM  
-- **2019 – 2021:** Bác sĩ **Chuyên khoa II – Y học cổ truyền**, Đại học Y Dược TP.HCM  
-
-:::
-
-::: {.card-box}
-
-## Kinh nghiệm chuyên môn
-
-- **Trưởng khoa Y học cổ truyền** – Bệnh viện 30-4, Bộ Công an  
-- **Trưởng nhóm thực hiện test thần kinh tâm lý nhận thức** –  
-  Đơn vị Trí nhớ và Sa sút trí tuệ, Bệnh viện 30-4  
-- **Thành viên** – Hội Alzheimer và Rối loạn nhận thức TP.HCM  
-
-:::
-
-::: {.card-box}
-
-## Lĩnh vực sở trường nghiên cứu
-
-- **Sa sút trí tuệ và suy giảm nhận thức**
-- **Ứng dụng Y học cổ truyền trong thực hành lâm sàng**
-- **Nghiên cứu Thương hàn luận và Hoàng Đế Nội Kinh**
-- **Phân tích dữ liệu y khoa bằng ngôn ngữ R**
-
-:::
-
-::: {.card-box}
-
-## Thông tin thêm
-
-🔗 **YouMed:** [Xem hồ sơ]({{< var youmed_url >}})
-
+Website được xây dựng bằng **Quarto + R + Posit + GitHub Pages** để chia sẻ kiến thức Y học cổ truyền, thần kinh và sa sút trí tuệ.
 :::

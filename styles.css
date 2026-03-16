@@ -1,12 +1,12 @@
-/* ===== Tổng thể ===== */
 :root {
-  --primary: #1e63c6;
-  --primary-dark: #1854aa;
-  --primary-soft: #eef5ff;
-  --heading: #123d75;
+  --primary: #005bbb;
+  --primary-dark: #004799;
+  --primary-soft: #eef5fc;
+  --heading: #16355c;
   --text: #334155;
+  --muted: #5b7088;
   --card-border: rgba(15, 23, 42, 0.06);
-  --shadow-lg: 0 18px 45px rgba(29, 67, 117, 0.10);
+  --shadow-lg: 0 20px 48px rgba(24, 58, 99, 0.10);
   --shadow-md: 0 14px 34px rgba(15, 23, 42, 0.07);
   --shadow-sm: 0 8px 20px rgba(30, 41, 59, 0.05);
 }
@@ -17,8 +17,7 @@ html {
 
 body {
   background:
-    radial-gradient(circle at top right, rgba(100, 149, 237, 0.10), transparent 28%),
-    linear-gradient(180deg, #f5f8fc 0%, #eef3f9 100%);
+    linear-gradient(180deg, #f7fafd 0%, #eef4fa 100%);
   color: var(--text);
 }
 
@@ -28,73 +27,99 @@ main.content {
   padding-bottom: 36px;
 }
 
-/* ===== Hero ===== */
+/* ===== Hero kiểu Mayo ===== */
 .hero-section {
-  position: relative;
-  overflow: hidden;
   display: grid;
-  grid-template-columns: 1.5fr 0.9fr;
+  grid-template-columns: 1.45fr 0.85fr;
   gap: 28px;
-  padding: 40px 36px;
-  margin: 8px 0 28px 0;
+  padding: 42px 40px;
+  margin: 18px 0 28px 0;
   border-radius: 28px;
-  background: linear-gradient(135deg, #f8fbff 0%, #edf4ff 100%);
-  border: 1px solid rgba(28, 84, 157, 0.12);
+  background: linear-gradient(135deg, #f8fbfe 0%, #edf4fb 100%);
+  border: 1px solid rgba(0, 91, 187, 0.10);
   box-shadow: var(--shadow-lg);
 }
 
-.hero-section::before {
+.hero-mayo {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-mayo::after {
   content: "";
   position: absolute;
-  top: -60px;
-  right: -40px;
-  width: 220px;
-  height: 220px;
-  background: radial-gradient(circle, rgba(30, 99, 198, 0.12) 0%, rgba(30, 99, 198, 0) 70%);
+  top: -40px;
+  right: -60px;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(0, 91, 187, 0.08) 0%, rgba(0, 91, 187, 0) 70%);
   pointer-events: none;
 }
 
-.hero-section h1 {
-  margin-bottom: 10px;
-  color: var(--heading);
-  font-weight: 800;
-  font-size: 2.6rem;
-  line-height: 1.12;
-  letter-spacing: -0.02em;
+.hero-left,
+.hero-right {
+  position: relative;
+  z-index: 1;
 }
 
-.hero-section h2 {
-  margin-top: 0;
-  margin-bottom: 14px;
-  font-size: 1.25rem;
-  color: #24508a;
-  font-weight: 700;
-  line-height: 1.45;
+.brand-row {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-bottom: 22px;
+}
+
+.brand-logo {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: #ffffff;
+  padding: 8px;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+}
+
+.brand-text h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.12rem;
+  font-weight: 800;
+  color: var(--primary);
+}
+
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.hero-section h1 {
+  margin: 0 0 16px 0;
+  color: var(--heading);
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
 }
 
 .hero-section p {
-  font-size: 1.05rem;
-  line-height: 1.82;
+  font-size: 1.14rem;
+  line-height: 1.85;
   color: var(--text);
   margin-bottom: 0;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
+  max-width: 900px;
 }
 
 .hero-buttons {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 22px;
+  gap: 14px;
+  margin-top: 26px;
 }
 
 .btn-main,
 .btn-soft {
   display: inline-block;
-  padding: 12px 20px;
+  padding: 13px 22px;
   border-radius: 14px;
   text-decoration: none;
   font-weight: 700;
@@ -103,45 +128,40 @@ main.content {
 
 .btn-main {
   background: var(--primary);
-  color: white !important;
-  box-shadow: 0 10px 24px rgba(30, 99, 198, 0.25);
+  color: #fff !important;
+  box-shadow: 0 10px 24px rgba(0, 91, 187, 0.22);
 }
 
 .btn-main:hover {
   transform: translateY(-2px);
   background: var(--primary-dark);
-  box-shadow: 0 14px 28px rgba(30, 99, 198, 0.28);
 }
 
 .btn-soft {
-  background: white;
+  background: #ffffff;
   color: var(--primary) !important;
-  border: 1px solid rgba(30, 99, 198, 0.25);
-  box-shadow: 0 8px 18px rgba(19, 59, 108, 0.08);
+  border: 1px solid rgba(0, 91, 187, 0.18);
+  box-shadow: 0 8px 18px rgba(19, 59, 108, 0.06);
 }
 
 .btn-soft:hover {
   transform: translateY(-2px);
-  background: #f3f8ff;
-  box-shadow: 0 12px 22px rgba(19, 59, 108, 0.10);
+  background: #f6faff;
 }
 
-/* ===== Badge box bên phải ===== */
-.hero-badge-box {
+.hero-right {
   display: flex;
   flex-direction: column;
   gap: 16px;
   justify-content: center;
-  position: relative;
-  z-index: 1;
 }
 
 .hero-badge {
-  padding: 18px 18px;
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.90);
-  border: 1px solid rgba(28, 84, 157, 0.12);
-  box-shadow: 0 10px 24px rgba(29, 67, 117, 0.08);
+  padding: 20px 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(0, 91, 187, 0.10);
+  box-shadow: 0 10px 24px rgba(29, 67, 117, 0.06);
   color: #274472;
   line-height: 1.75;
   transition: transform 0.22s ease, box-shadow 0.22s ease;
@@ -152,15 +172,14 @@ main.content {
   box-shadow: 0 14px 28px rgba(29, 67, 117, 0.10);
 }
 
-/* ===== Section card ===== */
+/* ===== Section cards ===== */
 .section-card {
   margin: 22px 0;
-  padding: 26px 26px 22px 26px;
+  padding: 28px 28px 24px 28px;
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.92);
   border: 1px solid var(--card-border);
   box-shadow: var(--shadow-md);
-  backdrop-filter: blur(6px);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
 }
 
@@ -174,12 +193,12 @@ main.content {
   margin-bottom: 18px;
   color: var(--heading);
   font-weight: 800;
-  border-bottom: 1px solid rgba(18, 61, 117, 0.12);
+  border-bottom: 1px solid rgba(22, 53, 92, 0.12);
   padding-bottom: 10px;
   line-height: 1.35;
 }
 
-/* ===== Grid chuyên môn ===== */
+/* ===== Feature grid ===== */
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -188,7 +207,7 @@ main.content {
 
 .feature-item {
   background: linear-gradient(180deg, #ffffff 0%, #f8fbff 100%);
-  border: 1px solid rgba(30, 99, 198, 0.10);
+  border: 1px solid rgba(0, 91, 187, 0.08);
   border-radius: 20px;
   padding: 20px 18px;
   box-shadow: 0 10px 24px rgba(30, 41, 59, 0.05);
@@ -198,13 +217,13 @@ main.content {
 .feature-item:hover {
   transform: translateY(-3px);
   box-shadow: 0 16px 30px rgba(30, 41, 59, 0.08);
-  border-color: rgba(30, 99, 198, 0.18);
+  border-color: rgba(0, 91, 187, 0.16);
 }
 
 .feature-item h3 {
   margin-top: 0;
   margin-bottom: 12px;
-  color: #1e4f92;
+  color: var(--primary);
   font-size: 1.1rem;
   font-weight: 800;
   line-height: 1.4;
@@ -231,9 +250,10 @@ main.content {
   padding: 18px 16px;
   border-radius: 18px;
   background: linear-gradient(180deg, #ffffff 0%, #f5f9ff 100%);
-  border: 1px solid rgba(30, 99, 198, 0.10);
+  border: 1px solid rgba(0, 91, 187, 0.08);
   box-shadow: var(--shadow-sm);
   transition: transform 0.22s ease, box-shadow 0.22s ease;
+  line-height: 1.7;
 }
 
 .mini-item:hover {
@@ -244,15 +264,10 @@ main.content {
 .mini-item h3 {
   margin-top: 0;
   margin-bottom: 8px;
-  color: #1e4f92;
+  color: var(--primary);
   font-size: 1.02rem;
   font-weight: 800;
   line-height: 1.4;
-}
-
-.mini-item p,
-.mini-item {
-  line-height: 1.7;
 }
 
 /* ===== Quick links ===== */
@@ -267,27 +282,23 @@ main.content {
   padding: 10px 16px;
   border-radius: 999px;
   background: var(--primary-soft);
-  color: #1b5bb8 !important;
+  color: var(--primary) !important;
   text-decoration: none;
   font-weight: 700;
-  border: 1px solid rgba(27, 91, 184, 0.12);
+  border: 1px solid rgba(0, 91, 187, 0.10);
   transition: all 0.2s ease;
 }
 
 .quick-link:hover {
-  background: #dfeeff;
+  background: #e2effd;
   transform: translateY(-1px);
-  box-shadow: 0 8px 18px rgba(27, 91, 184, 0.10);
+  box-shadow: 0 8px 18px rgba(0, 91, 187, 0.08);
 }
 
-/* ===== Khối công nghệ ===== */
+/* ===== Tech stack ===== */
 .tech-stack {
   text-align: center;
-  padding: 10px 6px 4px 6px;
-}
-
-.tech-stack p {
-  line-height: 1.8;
+  margin-bottom: 12px;
 }
 
 .tech-stack img {
@@ -299,9 +310,8 @@ main.content {
 }
 
 .tech-stack img:hover {
-  transform: translateY(-2px) scale(1.04);
+  transform: translateY(-2px) scale(1.05);
   opacity: 1;
-  filter: drop-shadow(0 10px 16px rgba(15, 23, 42, 0.14));
 }
 
 /* ===== Footer ===== */
@@ -312,15 +322,6 @@ main.content {
   color: #64748b;
   font-size: 0.97rem;
   line-height: 1.8;
-}
-
-/* ===== Link chung ===== */
-a {
-  transition: color 0.2s ease, opacity 0.2s ease;
-}
-
-a:hover {
-  opacity: 0.95;
 }
 
 /* ===== Responsive ===== */
@@ -339,22 +340,27 @@ a:hover {
   }
 
   .hero-section h1 {
-    font-size: 2.1rem;
+    font-size: 2.2rem;
   }
 }
 
 @media (max-width: 640px) {
+  .brand-row {
+    align-items: flex-start;
+  }
+
+  .brand-logo {
+    width: 64px;
+    height: 64px;
+  }
+
   .hero-section {
     padding: 24px 18px;
     border-radius: 22px;
   }
 
   .hero-section h1 {
-    font-size: 1.85rem;
-  }
-
-  .hero-section h2 {
-    font-size: 1.08rem;
+    font-size: 1.9rem;
   }
 
   .mini-grid {
@@ -379,7 +385,7 @@ a:hover {
 
   .tech-stack img {
     margin: 8px 10px;
-    max-height: 34px;
+    max-height: 36px;
     width: auto;
   }
 }
