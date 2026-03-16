@@ -1,0 +1,37 @@
+---
+title: "Châm cứu điều trị đau lưng – Giải pháp an toàn từ Y học cổ truyền"
+date: 2026-03-14
+categories: [cham-cuu, dau-lung, y-hoc-co-truyen]
+description: "Châm cứu là phương pháp điều trị đau lưng hiệu quả, an toàn, giúp giảm đau và phục hồi vận động theo Y học cổ truyền."
+---
+
+# Châm cứu điều trị đau lưng
+
+Đau lưng là một trong những bệnh lý thường gặp ở người lao động nặng, nhân viên văn phòng và người lớn tuổi. Theo Y học cổ truyền, đau lưng thường liên quan đến tình trạng khí huyết ứ trệ, kinh lạc bế tắc hoặc chức năng thận suy yếu.
+
+Châm cứu là phương pháp điều trị giúp khai thông kinh lạc, tăng tuần hoàn máu, giảm co cứng cơ và hỗ trợ giảm đau hiệu quả. Tùy từng trường hợp, bác sĩ sẽ lựa chọn các huyệt phù hợp như **Thận du, Đại trường du, Ủy trung** hoặc các điểm đau tại chỗ để hỗ trợ phục hồi chức năng vận động.
+
+Đây là phương pháp điều trị an toàn, ít tác dụng phụ và có thể phối hợp với các biện pháp khác như **xoa bóp bấm huyệt, cứu ngải** hoặc **thuốc Y học cổ truyền** nhằm nâng cao hiệu quả điều trị.
+
+## Khi nào nên đi khám?
+
+Người bệnh nên đi khám khi có các biểu hiện như:
+
+- Đau lưng kéo dài
+- Đau tăng khi vận động hoặc thay đổi tư thế
+- Co cứng cơ vùng thắt lưng
+- Đau lan xuống mông hoặc chân
+- Đau tái phát nhiều lần
+
+Việc thăm khám sớm giúp xác định nguyên nhân và lựa chọn phương pháp điều trị phù hợp, tránh để bệnh kéo dài ảnh hưởng đến sinh hoạt hằng ngày.
+
+## Thông tin phòng khám
+
+Bệnh nhân có thể đến khám và tư vấn tại:
+
+**Phòng khám Đông y Thùy Dương – BS. Đỗ Thanh Liêm phụ trách**  
+📍 167 Đông Minh, Đông Hòa, Dĩ An, TP. Hồ Chí Minh
+
+---
+
+*Website được xây dựng bằng **Quarto + GitHub Pages**.*
