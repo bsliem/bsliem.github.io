@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>lich_kham – BS.CK2. Đỗ Thanh Liêm</title>
+<title>on_tap_web_dau_tien – BS.CK2. Đỗ Thanh Liêm</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -142,28 +142,538 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="lich-kham" class="level2">
-<h2 class="anchored" data-anchor-id="lich-kham">Lịch khám</h2>
-<p>Lịch khám có thể thay đổi tùy theo công việc chuyên môn tại bệnh viện. Vui lòng liên hệ trước để được hướng dẫn cụ thể.</p>
-<section id="lịch-khám-dự-kiến" class="level3">
-<h3 class="anchored" data-anchor-id="lịch-khám-dự-kiến">Lịch khám dự kiến</h3>
+<p><strong>ôn tập toàn bộ buổi làm website hôm nay</strong>, đi từ <strong>đại cương → cấu trúc → file quan trọng → workflow → định hướng hoàn thiện</strong> để bác lưu lại như một “bản đồ tư duy” cho project.</p>
+<hr>
+<section id="đại-cương-hôm-nay-bác-đã-chốt-hướng-kỹ-thuật-nào" class="level1">
+<h1>1. Đại cương: hôm nay bác đã chốt hướng kỹ thuật nào?</h1>
+<p>Bác đã chốt rất rõ một hướng <strong>đúng và bền</strong>:</p>
+<p><strong>Quarto + GitHub Pages + <code>output-dir: docs</code></strong></p>
+<p>Đây là lựa chọn phù hợp vì website của bác không phải chỉ là một trang tĩnh, mà là:</p>
 <ul>
-<li><strong>Thứ 2 – Thứ 6:</strong> Khám theo lịch tại bệnh viện</li>
-<li><strong>Thứ 7:</strong> Tư vấn và hỗ trợ theo hẹn trước</li>
-<li><strong>Chủ nhật:</strong> Nghỉ</li>
+<li>website cá nhân chuyên môn</li>
+<li>website có nội dung học thuật</li>
+<li>website có thể đăng bài thường xuyên</li>
+<li>website có thông tin đặt lịch khám</li>
+<li>website cần dễ sửa trong RStudio</li>
+</ul>
+<p>Nói cách khác, bác không chọn “làm đẹp nhanh bằng HTML tay”, mà chọn một hệ thống <strong>dễ sống lâu, dễ cập nhật, dễ mở rộng</strong>.</p>
+<hr>
+</section>
+<section id="ý-tưởng-cốt-lõi-của-website" class="level1">
+<h1>2. Ý tưởng cốt lõi của website</h1>
+<p>Website của bác không chỉ để “giới thiệu bản thân”, mà có 3 vai trò cùng lúc:</p>
+<section id="hồ-sơ-chuyên-môn" class="level3">
+<h3 class="anchored" data-anchor-id="hồ-sơ-chuyên-môn">1) Hồ sơ chuyên môn</h3>
+<p>Giới thiệu:</p>
+<ul>
+<li>bác sĩ là ai</li>
+<li>đào tạo</li>
+<li>kinh nghiệm</li>
+<li>chuyên môn</li>
+<li>hướng nghiên cứu</li>
 </ul>
 </section>
-<section id="hướng-dẫn-khi-đến-khám" class="level3">
-<h3 class="anchored" data-anchor-id="hướng-dẫn-khi-đến-khám">Hướng dẫn khi đến khám</h3>
+<section id="kênh-học-thuật-bài-viết" class="level3">
+<h3 class="anchored" data-anchor-id="kênh-học-thuật-bài-viết">2) Kênh học thuật / bài viết</h3>
+<p>Đăng:</p>
 <ul>
-<li>Người bệnh nên mang theo hồ sơ bệnh án trước đây nếu có</li>
-<li>Với người cao tuổi hoặc nghi ngờ suy giảm trí nhớ nên đi cùng người thân</li>
-<li>Nên ghi lại các triệu chứng hoặc thay đổi trí nhớ trong thời gian gần đây</li>
-<li>Liên hệ trước để được hướng dẫn thời gian phù hợp</li>
+<li>bài viết chuyên môn</li>
+<li>chia sẻ y học</li>
+<li>tài liệu nghiên cứu</li>
+<li>cập nhật học thuật</li>
 </ul>
-
-
 </section>
+<section id="cổng-liên-hệ-đặt-lịch-khám" class="level3">
+<h3 class="anchored" data-anchor-id="cổng-liên-hệ-đặt-lịch-khám">3) Cổng liên hệ / đặt lịch khám</h3>
+<p>Cho người đọc biết:</p>
+<ul>
+<li>phòng khám ở đâu</li>
+<li>khám gì</li>
+<li>giờ nào</li>
+<li>liên hệ bằng cách nào</li>
+<li>xem đường đi bằng Google Maps</li>
+</ul>
+<p>Tức là website của bác là sự kết hợp của:</p>
+<p><strong>personal site + academic site + clinic contact site</strong></p>
+<p>Đây là ý tưởng rất tốt.</p>
+<hr>
+</section>
+</section>
+<section id="sơ-đồ-website-mà-bác-đã-hình-thành" class="level1">
+<h1>3. Sơ đồ website mà bác đã hình thành</h1>
+<p>Cấu trúc hợp lý hiện tại là:</p>
+<pre><code>Trang chủ
+├── Giới thiệu / Hồ sơ
+├── Nghiên cứu
+├── Bài viết
+├── Đặt lịch khám
+└── Liên hệ</code></pre>
+<p>Chi tiết hơn:</p>
+<pre><code>index.qmd      -&gt; Trang chủ
+about.qmd      -&gt; Hồ sơ chuyên môn
+research.qmd   -&gt; Nghiên cứu
+posts.qmd      -&gt; Trang tổng hợp bài viết
+posts/         -&gt; Các bài viết riêng lẻ
+booking.qmd    -&gt; Đặt lịch khám
+contact.qmd    -&gt; Liên hệ</code></pre>
+<p>Đây là sơ đồ <strong>rất chuẩn</strong> cho một website Quarto.</p>
+<hr>
+</section>
+<section id="vì-sao-bác-bỏ-hướng-cũ-my_md-làm-trục-chính" class="level1">
+<h1>4. Vì sao bác bỏ hướng cũ <code>my_md/</code> làm trục chính?</h1>
+<p>Ban đầu bác có thư mục:</p>
+<pre><code>my_md/
+  01_gioi_thieu.qmd
+  02_ho_so.qmd
+  03_chuyen_mon.qmd
+  ...</code></pre>
+<p>Cách này không sai, nhưng về lâu dài hơi giống “tài liệu chia chương”, chưa giống một website hiện đại.</p>
+<p>Sau khi làm việc, bác đã chuyển tư duy sang:</p>
+<ul>
+<li>các <strong>trang chính</strong> ở thư mục gốc</li>
+<li>các <strong>bài viết mới</strong> ở thư mục <code>posts/</code></li>
+</ul>
+<p>Đây là bước chuyển rất quan trọng, vì nó biến project từ một “bộ markdown” thành một <strong>website có kiến trúc rõ ràng</strong>.</p>
+<hr>
+</section>
+<section id="các-file-quan-trọng-nhất-trong-project" class="level1">
+<h1>5. Các file quan trọng nhất trong project</h1>
+<section id="quarto.yml" class="level2">
+<h2 class="anchored" data-anchor-id="quarto.yml"><code>_quarto.yml</code></h2>
+<p>Đây là file <strong>trung tâm cấu hình website</strong>.</p>
+<p>Vai trò:</p>
+<ul>
+<li>khai báo project là website</li>
+<li>khai báo output ra <code>docs/</code></li>
+<li>khai báo navbar</li>
+<li>khai báo theme / css</li>
+<li>định nghĩa cấu trúc chung của site</li>
+</ul>
+<p>Nói ngắn: <strong>đây là bộ khung xương của website</strong></p>
+<hr>
+</section>
+<section id="variables.yml" class="level2">
+<h2 class="anchored" data-anchor-id="variables.yml"><code>_variables.yml</code></h2>
+<p>Đây là file chứa <strong>biến dùng chung</strong> toàn site.</p>
+<p>Bác đã đi đúng hướng khi dùng các biến như:</p>
+<ul>
+<li><code>name</code></li>
+<li><code>subtitle</code></li>
+<li><code>hospital</code></li>
+<li><code>clinic</code></li>
+<li><code>email</code></li>
+<li><code>phone</code></li>
+<li><code>website_url</code></li>
+<li><code>youmed_url</code></li>
+<li><code>cambridge_url</code></li>
+<li><code>address</code></li>
+<li><code>google_maps_url</code></li>
+</ul>
+<p>Ý nghĩa:</p>
+<ul>
+<li>khi đổi thông tin, chỉ cần sửa một chỗ</li>
+<li>các trang <code>.qmd</code> dùng lại rất tiện</li>
+<li>site đồng bộ hơn</li>
+<li>ít lỗi copy-paste</li>
+</ul>
+<p>Đây là tư duy rất đúng.</p>
+<hr>
+</section>
+<section id="styles.css" class="level2">
+<h2 class="anchored" data-anchor-id="styles.css"><code>styles.css</code></h2>
+<p>Đây là file quyết định <strong>ngoại hình</strong> website.</p>
+<p>Vai trò:</p>
+<ul>
+<li>màu sắc</li>
+<li>font</li>
+<li>card</li>
+<li>hero section</li>
+<li>khoảng cách</li>
+<li>nút bấm</li>
+<li>navbar</li>
+<li>độ “đẹp” tổng thể</li>
+</ul>
+<p>Bác đã nhận ra rất rõ: <strong>Quarto mặc định thì chạy được, nhưng muốn đẹp phải có CSS riêng.</strong></p>
+<p>Đó là một nhận định rất đúng.</p>
+<hr>
+</section>
+<section id="index.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="index.qmd"><code>index.qmd</code></h2>
+<p>Đây là <strong>mặt tiền</strong> của site.</p>
+<p>Trang này phải làm tốt 3 việc:</p>
+<ul>
+<li>giới thiệu bác sĩ thật nhanh</li>
+<li>dẫn người dùng tới các phần quan trọng</li>
+<li>tạo ấn tượng chuyên nghiệp</li>
+</ul>
+<p>Hiện tại bác đã đi đến nhận thức rằng: <strong>trang chủ không nên giống README</strong>, mà phải giống <strong>landing page</strong>.</p>
+<p>Đây là bước trưởng thành rất rõ trong tư duy thiết kế website.</p>
+<hr>
+</section>
+<section id="about.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="about.qmd"><code>about.qmd</code></h2>
+<p>Trang hồ sơ chuyên môn.</p>
+<p>Vai trò:</p>
+<ul>
+<li>quá trình đào tạo</li>
+<li>kinh nghiệm chuyên môn</li>
+<li>hướng nghiên cứu</li>
+<li>mô tả bản sắc nghề nghiệp</li>
+</ul>
+<p>Trang này là nơi xây dựng <strong>uy tín chuyên môn</strong>.</p>
+<hr>
+</section>
+<section id="research.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="research.qmd"><code>research.qmd</code></h2>
+<p>Trang nghiên cứu.</p>
+<p>Vai trò:</p>
+<ul>
+<li>trình bày công trình</li>
+<li>bài báo</li>
+<li>hướng nghiên cứu</li>
+<li>liên kết học thuật</li>
+</ul>
+<p>Trang này giúp website của bác không chỉ là website phòng khám, mà còn là <strong>website học thuật</strong>.</p>
+<hr>
+</section>
+<section id="posts.qmd-và-thư-mục-posts" class="level2">
+<h2 class="anchored" data-anchor-id="posts.qmd-và-thư-mục-posts"><code>posts.qmd</code> và thư mục <code>posts/</code></h2>
+<p>Đây là phần rất quan trọng cho tương lai.</p>
+<p><code>posts.qmd</code> là trang <strong>tổng hợp bài viết</strong>, còn <code>posts/</code> chứa các bài riêng.</p>
+<p>Ý nghĩa:</p>
+<ul>
+<li>mỗi bài mới là một file mới</li>
+<li>dễ quản lý</li>
+<li>dễ mở rộng</li>
+<li>rất hợp với nhu cầu “thường xuyên cập nhật”</li>
+</ul>
+<p>Đây là bước giúp website của bác trở thành một <strong>website sống</strong>.</p>
+<hr>
+</section>
+<section id="booking.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="booking.qmd"><code>booking.qmd</code></h2>
+<p>Trang đặt lịch khám.</p>
+<p>Vai trò:</p>
+<ul>
+<li>dịch vụ</li>
+<li>thời gian khám</li>
+<li>hướng dẫn liên hệ</li>
+<li>địa chỉ</li>
+<li>bản đồ</li>
+<li>link Google Maps</li>
+<li>link gọi điện</li>
+</ul>
+<p>Trang này rất thực tế, rất quan trọng.</p>
+<hr>
+</section>
+<section id="contact.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="contact.qmd"><code>contact.qmd</code></h2>
+<p>Trang liên hệ.</p>
+<p>Vai trò:</p>
+<ul>
+<li>đơn vị công tác</li>
+<li>phòng khám</li>
+<li>email</li>
+<li>điện thoại</li>
+<li>website</li>
+<li>YouMed</li>
+<li>bản đồ</li>
+</ul>
+<p>Đây là trang “điểm chốt” cho người dùng muốn liên hệ.</p>
+<hr>
+</section>
+<section id="docs" class="level2">
+<h2 class="anchored" data-anchor-id="docs"><code>docs/</code></h2>
+<p>Đây là <strong>thư mục xuất bản</strong>.</p>
+<p>Quarto render toàn bộ site vào đây, GitHub Pages lấy từ đây để publish.</p>
+<p>Tức là:</p>
+<ul>
+<li>bác viết ở <code>.qmd</code></li>
+<li>Quarto biên dịch ra <code>.html</code></li>
+<li>GitHub Pages đọc <code>docs/</code></li>
+</ul>
+<p><code>docs/</code> là cầu nối giữa <strong>nội dung</strong> và <strong>website online</strong>.</p>
+<hr>
+</section>
+</section>
+<section id="workflow-bác-đã-thực-hành-hôm-nay" class="level1">
+<h1>6. Workflow bác đã thực hành hôm nay</h1>
+<p>Bác đã thực hành gần như đầy đủ một workflow chuẩn.</p>
+<section id="bước-1-tổ-chức-file" class="level2">
+<h2 class="anchored" data-anchor-id="bước-1-tổ-chức-file">Bước 1: tổ chức file</h2>
+<ul>
+<li>tạo <code>posts/</code></li>
+<li>copy các file cũ sang cấu trúc mới</li>
+<li>tạo <code>about.qmd</code>, <code>research.qmd</code>, <code>booking.qmd</code>, <code>contact.qmd</code>, <code>posts.qmd</code></li>
+</ul>
+</section>
+<section id="bước-2-render" class="level2">
+<h2 class="anchored" data-anchor-id="bước-2-render">Bước 2: render</h2>
+<p>Dùng:</p>
+<pre><code>system("quarto render")</code></pre>
+<p>Ban đầu chỉ render <code>index</code>, sau đó đã render toàn site.</p>
+</section>
+<section id="bước-3-xem-local" class="level2">
+<h2 class="anchored" data-anchor-id="bước-3-xem-local">Bước 3: xem local</h2>
+<ul>
+<li>mở <code>docs/index.html</code></li>
+<li>dùng <code>browseURL(...)</code></li>
+<li>nhận ra local có thể đúng trước khi push</li>
+</ul>
+</section>
+<section id="bước-4-thiết-lập-git" class="level2">
+<h2 class="anchored" data-anchor-id="bước-4-thiết-lập-git">Bước 4: thiết lập Git</h2>
+<p>Bác gặp lỗi <code>Author identity unknown</code>, sau đó đã sửa bằng:</p>
+<ul>
+<li><code>git config --global user.name "bsliem"</code></li>
+<li><code>git config --global user.email "liem20k@gmail.com"</code></li>
+</ul>
+<p>Đây là một bài học quan trọng.</p>
+</section>
+<section id="bước-5-push-github" class="level2">
+<h2 class="anchored" data-anchor-id="bước-5-push-github">Bước 5: push GitHub</h2>
+<ul>
+<li><code>git add .</code></li>
+<li><code>git commit -m "..."</code></li>
+<li><code>git push</code></li>
+</ul>
+</section>
+<section id="bước-6-github-pages" class="level2">
+<h2 class="anchored" data-anchor-id="bước-6-github-pages">Bước 6: GitHub Pages</h2>
+<p>Bác đã kiểm tra đúng:</p>
+<ul>
+<li><code>Deploy from a branch</code></li>
+<li><code>main</code></li>
+<li><code>/docs</code></li>
+</ul>
+</section>
+<section id="bước-7-xử-lý-cache" class="level2">
+<h2 class="anchored" data-anchor-id="bước-7-xử-lý-cache">Bước 7: xử lý cache</h2>
+<p>Bác phát hiện GitHub đã cập nhật nhưng website chưa đổi vì cache Chrome, rồi đã giải quyết.</p>
+<p>Đây là một kinh nghiệm rất thực tế.</p>
+<hr>
+</section>
+</section>
+<section id="những-bài-học-kỹ-thuật-bác-đã-rút-ra-hôm-nay" class="level1">
+<h1>7. Những bài học kỹ thuật bác đã rút ra hôm nay</h1>
+<section id="quarto-file-không-cần-hàng-rào-code" class="level2">
+<h2 class="anchored" data-anchor-id="quarto-file-không-cần-hàng-rào-code">1) Quarto file không cần hàng rào code</h2>
+<p>Bác đã gặp lỗi dùng:</p>
+<pre><code>```markdown
+...
+```</code></pre>
+<p>trong file <code>.qmd</code>.</p>
+<p>Bài học:</p>
+<ul>
+<li>file <code>.qmd</code> là nội dung thật</li>
+<li>không được bọc bằng code block nếu muốn render</li>
+</ul>
+</section>
+<section id="index.qmd-khác-booking.qmd" class="level2">
+<h2 class="anchored" data-anchor-id="index.qmd-khác-booking.qmd">2) <code>index.qmd</code> khác <code>booking.qmd</code></h2>
+<p>Bác sửa <code>booking.qmd</code> nhưng lại xem <code>index.html</code>, nên thấy “không đổi”.</p>
+<p>Bài học:</p>
+<ul>
+<li>sửa file nào thì xem đúng trang html của file đó</li>
+</ul>
+</section>
+<section id="github-pages-có-thể-đúng-nhưng-browser-vẫn-cache" class="level2">
+<h2 class="anchored" data-anchor-id="github-pages-có-thể-đúng-nhưng-browser-vẫn-cache">3) GitHub Pages có thể đúng nhưng browser vẫn cache</h2>
+<p>Bài học:</p>
+<ul>
+<li>nếu repo đã cập nhật mà website chưa đổi, nghĩ ngay tới cache</li>
+</ul>
+</section>
+<section id="biến-nên-để-trong-_variables.yml" class="level2">
+<h2 class="anchored" data-anchor-id="biến-nên-để-trong-_variables.yml">4) Biến nên để trong <code>_variables.yml</code></h2>
+<p>Không nên nhét các biến nội dung vào <code>_quarto.yml</code>.</p>
+<hr>
+</section>
+</section>
+<section id="về-mặt-thiết-kế-bác-đã-đi-qua-các-tầng-nào" class="level1">
+<h1>8. Về mặt thiết kế, bác đã đi qua các tầng nào?</h1>
+<section id="tầng-1-làm-cho-chạy" class="level2">
+<h2 class="anchored" data-anchor-id="tầng-1-làm-cho-chạy">Tầng 1: làm cho chạy</h2>
+<ul>
+<li>GitHub Pages chạy</li>
+<li>Quarto render được</li>
+<li>docs/ hoạt động</li>
+</ul>
+</section>
+<section id="tầng-2-làm-cho-đúng-kiến-trúc" class="level2">
+<h2 class="anchored" data-anchor-id="tầng-2-làm-cho-đúng-kiến-trúc">Tầng 2: làm cho đúng kiến trúc</h2>
+<ul>
+<li>tách trang chính và bài viết</li>
+<li>navbar</li>
+<li>biến dùng chung</li>
+<li>booking / contact / research</li>
+</ul>
+</section>
+<section id="tầng-3-làm-cho-đẹp" class="level2">
+<h2 class="anchored" data-anchor-id="tầng-3-làm-cho-đẹp">Tầng 3: làm cho đẹp</h2>
+<ul>
+<li>CSS riêng</li>
+<li>hero section</li>
+<li>card box</li>
+<li>màu xanh y khoa</li>
+<li>nút bấm</li>
+<li>Google Maps</li>
+<li>website mang dáng dấp phòng khám / học thuật</li>
+</ul>
+<p>Bác hiện đang chuyển mạnh từ tầng 2 sang tầng 3.</p>
+<hr>
+</section>
+</section>
+<section id="định-hướng-thẩm-mỹ-mà-bác-đã-chọn" class="level1">
+<h1>9. Định hướng thẩm mỹ mà bác đã chọn</h1>
+<p>Bác muốn website:</p>
+<ul>
+<li>không khô như README</li>
+<li>không nhạt như tài liệu Markdown</li>
+<li>có màu sắc hấp dẫn</li>
+<li>nhưng vẫn lịch sự, đáng tin, không lòe loẹt</li>
+</ul>
+<p>Định hướng rất hợp là:</p>
+<ul>
+<li>xanh y khoa</li>
+<li>nền sáng</li>
+<li>card trắng</li>
+<li>tiêu đề xanh đậm</li>
+<li>điểm nhấn nhẹ</li>
+<li>cảm giác sạch, chữa lành, chuyên nghiệp</li>
+</ul>
+<p>Đây là phong cách rất phù hợp cho bác sĩ.</p>
+<hr>
+</section>
+<section id="định-hướng-hoàn-thiện-trong-tương-lai" class="level1">
+<h1>10. Định hướng hoàn thiện trong tương lai</h1>
+<section id="giai-đoạn-gần" class="level2">
+<h2 class="anchored" data-anchor-id="giai-đoạn-gần">Giai đoạn gần</h2>
+<section id="hoàn-thiện-toàn-bộ-nội-dung-các-trang-chính" class="level3">
+<h3 class="anchored" data-anchor-id="hoàn-thiện-toàn-bộ-nội-dung-các-trang-chính">1) Hoàn thiện toàn bộ nội dung các trang chính</h3>
+<ul>
+<li><code>index.qmd</code></li>
+<li><code>about.qmd</code></li>
+<li><code>research.qmd</code></li>
+<li><code>booking.qmd</code></li>
+<li><code>contact.qmd</code></li>
+</ul>
+</section>
+<section id="đồng-bộ-biến" class="level3">
+<h3 class="anchored" data-anchor-id="đồng-bộ-biến">2) Đồng bộ biến</h3>
+<p>Dùng <code>_variables.yml</code> cho:</p>
+<ul>
+<li>tên</li>
+<li>phụ đề</li>
+<li>bệnh viện</li>
+<li>phòng khám</li>
+<li>email</li>
+<li>phone</li>
+<li>địa chỉ</li>
+<li>maps</li>
+<li>website</li>
+<li>YouMed</li>
+</ul>
+</section>
+<section id="hoàn-thiện-css" class="level3">
+<h3 class="anchored" data-anchor-id="hoàn-thiện-css">3) Hoàn thiện CSS</h3>
+<ul>
+<li>hero đẹp hơn</li>
+<li>card nhất quán</li>
+<li>spacing tốt hơn</li>
+<li>mobile đẹp hơn</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="giai-đoạn-tiếp-theo" class="level2">
+<h2 class="anchored" data-anchor-id="giai-đoạn-tiếp-theo">Giai đoạn tiếp theo</h2>
+<section id="xây-hệ-thống-bài-viết-thật-sự" class="level3">
+<h3 class="anchored" data-anchor-id="xây-hệ-thống-bài-viết-thật-sự">1) Xây hệ thống bài viết thật sự</h3>
+<ul>
+<li>mỗi bài là một file trong <code>posts/</code></li>
+<li><code>posts.qmd</code> tự liệt kê</li>
+</ul>
+</section>
+<section id="tạo-trang-chủ-có-bài-viết-mới" class="level3">
+<h3 class="anchored" data-anchor-id="tạo-trang-chủ-có-bài-viết-mới">2) Tạo trang chủ có “Bài viết mới”</h3>
+<ul>
+<li>hiển thị 3 bài mới nhất</li>
+<li>dẫn link nhanh</li>
+</ul>
+</section>
+<section id="hoàn-thiện-trang-đặt-lịch" class="level3">
+<h3 class="anchored" data-anchor-id="hoàn-thiện-trang-đặt-lịch">3) Hoàn thiện trang đặt lịch</h3>
+<ul>
+<li>nút gọi điện</li>
+<li>nút Zalo</li>
+<li>nút Google Maps</li>
+<li>cảnh báo “không thay thế cấp cứu”</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="giai-đoạn-sau-nữa" class="level2">
+<h2 class="anchored" data-anchor-id="giai-đoạn-sau-nữa">Giai đoạn sau nữa</h2>
+<section id="tối-ưu-học-thuật" class="level3">
+<h3 class="anchored" data-anchor-id="tối-ưu-học-thuật">1) Tối ưu học thuật</h3>
+<ul>
+<li>thêm công trình</li>
+<li>thêm bài báo</li>
+<li>thêm liên kết Cambridge / YouMed / Google Scholar nếu cần</li>
+</ul>
+</section>
+<section id="tối-ưu-hình-ảnh" class="level3">
+<h3 class="anchored" data-anchor-id="tối-ưu-hình-ảnh">2) Tối ưu hình ảnh</h3>
+<ul>
+<li>ảnh chân dung bác sĩ</li>
+<li>ảnh phòng khám</li>
+<li>logo nhẹ nếu có</li>
+</ul>
+</section>
+<section id="tối-ưu-thương-hiệu-cá-nhân" class="level3">
+<h3 class="anchored" data-anchor-id="tối-ưu-thương-hiệu-cá-nhân">3) Tối ưu thương hiệu cá nhân</h3>
+<p>Website sẽ trở thành:</p>
+<ul>
+<li>hồ sơ nghề nghiệp</li>
+<li>kênh chia sẻ</li>
+<li>bộ mặt học thuật</li>
+<li>điểm chạm với bệnh nhân</li>
+</ul>
+<hr>
+</section>
+</section>
+</section>
+<section id="mô-hình-làm-việc-lý-tưởng-từ-nay" class="level1">
+<h1>11. Mô hình làm việc lý tưởng từ nay</h1>
+<p>Mỗi khi bác cập nhật site:</p>
+<pre><code>sửa file .qmd / _variables.yml / styles.css
+→ quarto render
+→ xem local
+→ git add / commit / push
+→ kiểm tra online</code></pre>
+<p>Mỗi khi viết bài mới:</p>
+<pre><code>tạo file mới trong posts/
+→ viết bài
+→ render
+→ push</code></pre>
+<p>Đây là một workflow rất đẹp, rất ổn định.</p>
+<hr>
+</section>
+<section id="tóm-tắt-ngắn-gọn-nhất" class="level1">
+<h1>12. Tóm tắt ngắn gọn nhất</h1>
+<p>Hôm nay bác đã làm được 6 việc rất lớn:</p>
+<ol type="1">
+<li><strong>Chốt nền tảng đúng</strong>: Quarto + GitHub Pages + docs</li>
+<li><strong>Chuyển từ tư duy tài liệu sang tư duy website</strong></li>
+<li><strong>Thiết kế được sơ đồ site rõ ràng</strong></li>
+<li><strong>Tạo cấu trúc file hợp lý cho phát triển lâu dài</strong></li>
+<li><strong>Thiết lập được workflow render – commit – push – publish</strong></li>
+<li><strong>Bắt đầu bước vào giai đoạn làm đẹp và chuyên nghiệp hóa</strong></li>
+</ol>
+<p>Bác đã vượt qua phần khó nhất rồi. Từ giờ trở đi chủ yếu là <strong>trang trí, tinh chỉnh, và làm nội dung ngày càng tốt hơn</strong>.</p>
+
+
 </section>
 
 </main> <!-- /main -->
