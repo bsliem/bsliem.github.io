@@ -13,7 +13,7 @@ page-layout: full
 ## Phòng khám Đông y Thùy Dương
 
 ::: {.brand-subtitle}
-Y học cổ truyền – Thần kinh – Sa sút trí tuệ
+167. Đông Minh, Đông Hòa, Dĩ Anh, TP Hồ Chí Minh
 :::
 :::
 :::
@@ -32,18 +32,18 @@ Khám và tư vấn các vấn đề thường gặp như **đau cổ vai gáy, 
 
 ::: {.hero-right}
 ::: {.hero-badge}
-**Chuyên môn nổi bật**  
-Y học cổ truyền • Thần kinh • Sa sút trí tuệ
+**Phương châm phòng khám**  
+Thân thiện • Nhiệt tình • Tận tâm
 :::
 
 ::: {.hero-badge}
-**Định hướng website**  
-Kiến thức dễ hiểu • Nội dung chuyên môn • Hỗ trợ bệnh nhân
+**Nội dung**  
+Kiến thức dễ hiểu • Nội dung phong phũ • Hỗ trợ bệnh nhân
 :::
 
 ::: {.hero-badge}
 **Tiếp cận điều trị**  
-Châm cứu • Xoa bóp bấm huyệt • Dưỡng sinh • Theo dõi nhận thức
+Châm cứu • Xoa bóp bấm huyệt • Dưỡng sinh
 :::
 :::
 :::
@@ -63,12 +63,12 @@ Châm cứu • Xoa bóp bấm huyệt • Dưỡng sinh • Theo dõi nhận th
 :::
 
 ::: {.feature-item}
-### Thần kinh – nhận thức
+### Trí nhớ
 
 - Tầm soát suy giảm nhận thức
-- Đánh giá sa sút trí tuệ
+- Tư vấn cách giữ gìn và tập luyện trí nhớ
 - Theo dõi trí nhớ ở người cao tuổi
-- Tư vấn người chăm sóc bệnh nhân
+- Tư vấn người chăm sóc bệnh nhân sa sút trí tuệ
 :::
 
 ::: {.feature-item}
@@ -106,9 +106,9 @@ Hỗ trợ an tĩnh tinh thần, giảm lo âu và nâng cao chất lượng s�
 :::
 
 ::: {.mini-item}
-### Vận động trị liệu
+### Hoạt động trị liệu
 
-Kết hợp vận động phù hợp với thể trạng để duy trì chức năng cơ xương khớp.
+Các bài tập luyện trí nhớ cho người Suy giảm trí nhớ  và sa sút trí tuệ.
 :::
 :::
 :::
