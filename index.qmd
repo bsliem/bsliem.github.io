@@ -3,41 +3,112 @@ title: ""
 page-layout: full
 ---
 
-::: {.hero}
-# BS.CK2. Đỗ Thanh Liêm
+::: {.hero-section}
+::: {.hero-content}
+# BS.CKII. Đỗ Thanh Liêm
 
-Bác sĩ chuyên ngành **Y học cổ truyền – Thần kinh – Sa sút trí tuệ**.  
-Website giới thiệu chuyên môn, hoạt động học thuật, bài viết chuyên đề và thông tin đặt lịch khám.
+## Y học cổ truyền – Thần kinh – Sa sút trí tuệ
 
-[Giới thiệu](about.qmd){.btn .btn-primary}
-[Bài viết](posts.qmd){.btn .btn-outline-primary}
-[Đặt lịch khám](booking.qmd){.btn .btn-outline-primary}
+Khám và tư vấn các vấn đề thường gặp như **đau cổ vai gáy, đau lưng, mất ngủ, đau thần kinh, suy giảm trí nhớ và sa sút trí tuệ**, kết hợp định hướng **điều trị Y học cổ truyền** và **đánh giá nhận thức lâm sàng**.
+
+::: {.hero-buttons}
+[Giới thiệu](about.qmd){.btn-main}
+[Bài viết](posts.qmd){.btn-soft}
+[Đặt lịch khám](booking.qmd){.btn-soft}
+:::
 :::
 
-::: {.card-box}
+::: {.hero-badge-box}
+::: {.hero-badge}
+**Chuyên môn nổi bật**  
+Y học cổ truyền • Thần kinh • Sa sút trí tuệ
+:::
+
+::: {.hero-badge}
+**Định hướng website**  
+Kiến thức dễ hiểu • Nội dung chuyên môn • Hỗ trợ bệnh nhân
+:::
+:::
+:::
+
+::: {.section-card}
 ## Lĩnh vực chuyên môn
 
-- Y học cổ truyền
-- Thần kinh học
-- Sa sút trí tuệ
-- Đánh giá nhận thức lâm sàng
+::: {.feature-grid}
+::: {.feature-item}
+### Y học cổ truyền
+
+- Khám bệnh Y học cổ truyền
+- Châm cứu
+- Điện châm
+- Xoa bóp bấm huyệt
+- Cứu ngải và hỗ trợ phục hồi chức năng
 :::
 
-::: {.card-box}
-## Định hướng website
+::: {.feature-item}
+### Thần kinh – nhận thức
 
-- Giới thiệu hồ sơ chuyên môn và hoạt động học thuật
-- Cập nhật bài viết chuyên môn, dễ đọc cho người bệnh và đồng nghiệp
-- Chia sẻ nội dung nghiên cứu và công trình khoa học
+- Tầm soát suy giảm nhận thức
+- Đánh giá sa sút trí tuệ
+- Theo dõi trí nhớ ở người cao tuổi
+- Tư vấn người chăm sóc bệnh nhân
+:::
+
+::: {.feature-item}
+### Bệnh lý thường gặp
+
+- Đau lưng
+- Đau cổ vai gáy
+- Mất ngủ
+- Đau thần kinh tọa
+- Suy nhược cơ thể
+:::
+:::
+:::
+
+::: {.section-card}
+## Dưỡng sinh và hỗ trợ điều trị
+
+::: {.mini-grid}
+::: {.mini-item}
+### Khí công
+Điều hòa hơi thở, tăng khả năng thư giãn và hỗ trợ phục hồi thể lực.
+:::
+
+::: {.mini-item}
+### Tập thở
+Hướng dẫn thói quen thở đúng, giảm căng thẳng và cải thiện giấc ngủ.
+:::
+
+::: {.mini-item}
+### Thiền
+Hỗ trợ an tĩnh tinh thần, giảm lo âu và nâng cao chất lượng sống.
+:::
+
+::: {.mini-item}
+### Vận động trị liệu
+Kết hợp vận động phù hợp với thể trạng để duy trì chức năng cơ xương khớp.
+:::
+:::
+:::
+
+::: {.section-card}
+## Vì sao nên theo dõi website này?
+
+- Cập nhật bài viết dễ hiểu dành cho người bệnh và gia đình
+- Chia sẻ kiến thức Y học cổ truyền ứng dụng trong đời sống hằng ngày
+- Giới thiệu hoạt động chuyên môn, nghiên cứu và công trình khoa học
 - Hỗ trợ liên hệ và đặt lịch khám thuận tiện
 :::
 
-::: {.card-box}
+::: {.section-card}
 ## Truy cập nhanh
 
-- [Hồ sơ chuyên môn](about.qmd)
-- [Nghiên cứu](research.qmd)
-- [Bài viết](posts.qmd)
-- [Đặt lịch khám](booking.qmd)
-- [Liên hệ](contact.qmd)
+::: {.quick-links}
+[Hồ sơ chuyên môn](about.qmd){.quick-link}
+[Nghiên cứu](research.qmd){.quick-link}
+[Bài viết](posts.qmd){.quick-link}
+[Đặt lịch khám](booking.qmd){.quick-link}
+[Liên hệ](contact.qmd){.quick-link}
+:::
 :::
