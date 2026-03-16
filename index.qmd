@@ -38,29 +38,29 @@ Kiến thức dễ hiểu • Nội dung chuyên môn • Hỗ trợ bệnh nhâ
 ::: {.feature-item}
 ### Y học cổ truyền
 
-- Khám bệnh Y học cổ truyền
-- Châm cứu
-- Điện châm
-- Xoa bóp bấm huyệt
-- Cứu ngải và hỗ trợ phục hồi chức năng
+- Khám bệnh Y học cổ truyền  
+- Châm cứu – điện châm  
+- Xoa bóp bấm huyệt  
+- Cứu ngải  
+- Hỗ trợ phục hồi chức năng
 :::
 
 ::: {.feature-item}
 ### Thần kinh – nhận thức
 
-- Tầm soát suy giảm nhận thức
-- Đánh giá sa sút trí tuệ
-- Theo dõi trí nhớ ở người cao tuổi
+- Tầm soát suy giảm nhận thức  
+- Đánh giá sa sút trí tuệ  
+- Theo dõi trí nhớ ở người cao tuổi  
 - Tư vấn người chăm sóc bệnh nhân
 :::
 
 ::: {.feature-item}
 ### Bệnh lý thường gặp
 
-- Đau lưng
-- Đau cổ vai gáy
-- Mất ngủ
-- Đau thần kinh tọa
+- Đau lưng  
+- Đau cổ vai gáy  
+- Mất ngủ  
+- Đau thần kinh tọa  
 - Suy nhược cơ thể
 :::
 :::
@@ -95,9 +95,9 @@ Kết hợp vận động phù hợp với thể trạng để duy trì chức n
 ::: {.section-card}
 ## Vì sao nên theo dõi website này?
 
-- Cập nhật bài viết dễ hiểu dành cho người bệnh và gia đình
-- Chia sẻ kiến thức Y học cổ truyền ứng dụng trong đời sống hằng ngày
-- Giới thiệu hoạt động chuyên môn, nghiên cứu và công trình khoa học
+- Cập nhật bài viết dễ hiểu dành cho người bệnh và gia đình  
+- Chia sẻ kiến thức Y học cổ truyền ứng dụng trong đời sống hằng ngày  
+- Giới thiệu hoạt động chuyên môn, nghiên cứu và công trình khoa học  
 - Hỗ trợ liên hệ và đặt lịch khám thuận tiện
 :::
 
@@ -111,4 +111,29 @@ Kết hợp vận động phù hợp với thể trạng để duy trì chức n
 [Đặt lịch khám](booking.qmd){.quick-link}
 [Liên hệ](contact.qmd){.quick-link}
 :::
+:::
+
+---
+
+::: {.section-card}
+## Công nghệ sử dụng cho website
+
+::: {.tech-stack}
+
+![Quarto](https://quarto.org/quarto.png){height=40}
+![R](https://www.r-project.org/logo/Rlogo.png){height=40}
+![RStudio](https://posit.co/wp-content/uploads/2022/04/posit-logo-fullcolor-TM.svg){height=40}
+![GitHub](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png){height=40}
+
+Website được xây dựng bằng **Quarto**, **R**, **RStudio** và được lưu trữ trên **GitHub Pages**.  
+Hệ thống giúp cập nhật nội dung nhanh chóng, minh bạch và dễ dàng chia sẻ kiến thức y học.
+
+:::
+:::
+
+---
+
+::: {.site-footer}
+© 2026 **BS.CKII. Đỗ Thanh Liêm**  
+Phòng khám Đông y Thùy Dương – 167 Đông Minh, Đông Hòa, Dĩ An, TP.HCM
 :::
