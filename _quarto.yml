@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "BS.CK2. Đỗ Thanh Liêm"
+  title: "BS.CKII. Đỗ Thanh Liêm"
   site-url: https://bsliem.github.io/
 
   navbar:
@@ -29,11 +29,6 @@ website:
     right:
       - icon: github
         href: https://github.com/bsliem
-
-  page-footer:
-    center: |
-      © BS.CK2. Đỗ Thanh Liêm  
-      Website về khám tư vấn Y học cổ truyền
 
 format:
   html:
