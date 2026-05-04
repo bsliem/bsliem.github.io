@@ -135,6 +135,7 @@ Các bài tập luyện trí nhớ cho người Suy giảm trí nhớ  và sa s�
 :::
 
 ::: {.section-card}
+<!--
 ## Nền tảng website
 
 ::: {.tech-stack}
@@ -146,6 +147,8 @@ Các bài tập luyện trí nhớ cho người Suy giảm trí nhớ  và sa s�
 
 Website được xây dựng bằng **Quarto**, **R**, **Posit / RStudio** và được lưu trữ trên **GitHub Pages**.
 :::
+
+-->
 
 ::: {.site-footer}
 © 2026 **BS.CKII. Đỗ Thanh Liêm**  
