@@ -13,19 +13,23 @@ page-layout: full
 ## Phòng khám Đông y Thùy Dương
 
 ::: {.brand-subtitle}
-167. Đông Minh, Đông Hòa, Dĩ Anh, TP Hồ Chí Minh
+167 Đông Minh, Đông Hòa, Dĩ An, TP. Hồ Chí Minh
 :::
 :::
 :::
 
 # BS.CKII. Đỗ Thanh Liêm
 
-Khám và tư vấn các vấn đề thường gặp như **đau cổ vai gáy, đau lưng, mất ngủ, đau thần kinh, suy giảm trí nhớ và sa sút trí tuệ**, kết hợp định hướng **điều trị Y học cổ truyền** và **đánh giá nhận thức lâm sàng**.
+Khám, tư vấn và hỗ trợ điều trị các vấn đề thường gặp như
+**[đau cổ vai gáy](posts/2026-03-14-dau-co-vai-gay.qmd)**, 
+**đau lưng**, **mất ngủ**, **đau thần kinh tọa**, **suy giảm trí nhớ** và **sa sút trí tuệ**.
+
+Phòng khám kết hợp định hướng **Y học cổ truyền**, chăm sóc phục hồi và **đánh giá nhận thức lâm sàng**, nhằm giúp người bệnh được tư vấn rõ ràng, dễ hiểu và phù hợp với tình trạng thực tế.
 
 ::: {.hero-buttons}
-[Giới thiệu](about.qmd){.btn-main}
-[Bài viết](posts.qmd){.btn-soft}
-[Đặt lịch khám](booking.qmd){.btn-soft}
+[Đặt lịch khám](booking.qmd){.btn-main}
+[Giới thiệu bác sĩ](about.qmd){.btn-soft}
+[Liên hệ](contact.qmd){.btn-soft}
 :::
 
 :::
@@ -37,78 +41,82 @@ Thân thiện • Nhiệt tình • Tận tâm
 :::
 
 ::: {.hero-badge}
-**Nội dung**  
-Kiến thức dễ hiểu • Nội dung phong phũ • Hỗ trợ bệnh nhân
+**Dành cho người bệnh và gia đình**  
+Dễ hiểu • Gần gũi • Có định hướng thực hành
 :::
 
 ::: {.hero-badge}
-**Tiếp cận điều trị**  
-Châm cứu • Xoa bóp bấm huyệt • Dưỡng sinh
+**Hướng tiếp cận điều trị**  
+Châm cứu • Xoa bóp bấm huyệt • Dưỡng sinh • Tư vấn chăm sóc
 :::
 :::
 :::
 
 ::: {.section-card}
-## Lĩnh vực chuyên môn
+## Phòng khám hỗ trợ những vấn đề nào?
+
+::: {.feature-grid}
+::: {.feature-item}
+### Đau nhức cơ xương khớp
+
+- Đau cổ vai gáy
+- Đau lưng
+- Đau thần kinh tọa
+- Đau mỏi cơ thể
+- Hỗ trợ phục hồi chức năng
+:::
+
+::: {.feature-item}
+### Mất ngủ và suy nhược
+
+- Mất ngủ
+- Căng thẳng, mệt mỏi
+- Suy nhược cơ thể
+- Hỗ trợ thư giãn và điều hòa giấc ngủ
+- Tư vấn thay đổi lối sống phù hợp
+:::
+
+::: {.feature-item}
+### Trí nhớ và người cao tuổi
+
+- Tầm soát suy giảm nhận thức
+- Theo dõi trí nhớ ở người cao tuổi
+- Tư vấn luyện tập trí nhớ
+- Tư vấn cho gia đình và người chăm sóc bệnh nhân sa sút trí tuệ
+:::
+:::
+:::
+
+::: {.section-card}
+## Phương pháp hỗ trợ điều trị
 
 ::: {.feature-grid}
 ::: {.feature-item}
 ### Y học cổ truyền
 
-- Khám bệnh Y học cổ truyền
+- Khám bệnh theo Y học cổ truyền
 - Châm cứu – điện châm
 - Xoa bóp bấm huyệt
 - Cứu ngải
-- Hỗ trợ phục hồi chức năng
+- Tư vấn chăm sóc sức khỏe hằng ngày
 :::
 
 ::: {.feature-item}
-### Trí nhớ
+### Dưỡng sinh
 
-- Tầm soát suy giảm nhận thức
-- Tư vấn cách giữ gìn và tập luyện trí nhớ
-- Theo dõi trí nhớ ở người cao tuổi
-- Tư vấn người chăm sóc bệnh nhân sa sút trí tuệ
+- Hướng dẫn tập thở
+- Khí công nhẹ nhàng
+- Thiền thư giãn
+- Tập luyện phù hợp với thể trạng
 :::
 
 ::: {.feature-item}
-### Bệnh lý thường gặp
+### Chăm sóc trí nhớ
 
-- Đau lưng
-- Đau cổ vai gáy
-- Mất ngủ
-- Đau thần kinh tọa
-- Suy nhược cơ thể
-:::
-:::
-:::
-
-::: {.section-card}
-## Dưỡng sinh và hỗ trợ điều trị
-
-::: {.mini-grid}
-::: {.mini-item}
-### Khí công
-
-Điều hòa hơi thở, tăng khả năng thư giãn và hỗ trợ phục hồi thể lực.
-:::
-
-::: {.mini-item}
-### Tập thở
-
-Hướng dẫn thói quen thở đúng, giảm căng thẳng và cải thiện giấc ngủ.
-:::
-
-::: {.mini-item}
-### Thiền
-
-Hỗ trợ an tĩnh tinh thần, giảm lo âu và nâng cao chất lượng sống.
-:::
-
-::: {.mini-item}
-### Hoạt động trị liệu
-
-Các bài tập luyện trí nhớ cho người Suy giảm trí nhớ  và sa sút trí tuệ.
+- Bài tập luyện trí nhớ
+- Tư vấn sinh hoạt cho người cao tuổi
+- Hướng dẫn gia đình theo dõi thay đổi nhận thức
+- Hỗ trợ định hướng chăm sóc lâu dài
 :::
 :::
 :::
@@ -116,8 +124,9 @@ Các bài tập luyện trí nhớ cho người Suy giảm trí nhớ  và sa s�
 ::: {.section-card}
 ## Vì sao nên theo dõi website này?
 
-- Cập nhật bài viết dễ hiểu dành cho người bệnh và gia đình
+- Cập nhật các bài viết sức khỏe dễ hiểu dành cho người bệnh và gia đình
 - Chia sẻ kiến thức Y học cổ truyền ứng dụng trong đời sống hằng ngày
+- Cung cấp thông tin về chăm sóc trí nhớ, mất ngủ, đau nhức và phục hồi sức khỏe
 - Giới thiệu hoạt động chuyên môn, nghiên cứu và công trình khoa học
 - Hỗ trợ liên hệ và đặt lịch khám thuận tiện
 :::
@@ -126,11 +135,11 @@ Các bài tập luyện trí nhớ cho người Suy giảm trí nhớ  và sa s�
 ## Truy cập nhanh
 
 ::: {.quick-links}
-[Hồ sơ chuyên môn](about.qmd){.quick-link}
-[Nghiên cứu](research.qmd){.quick-link}
-[Bài viết](posts.qmd){.quick-link}
 [Đặt lịch khám](booking.qmd){.quick-link}
-[Liên hệ](contact.qmd){.quick-link}
+[Liên hệ phòng khám](contact.qmd){.quick-link}
+[Giới thiệu bác sĩ](about.qmd){.quick-link}
+[Bài viết sức khỏe](posts.qmd){.quick-link}
+[Nghiên cứu khoa học](research.qmd){.quick-link}
 :::
 :::
 
