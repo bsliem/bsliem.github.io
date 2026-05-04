@@ -14,6 +14,21 @@ options(
 .project_name <- "bsliem.github.io"
 .project_url  <- "https://bsliem.github.io/"
 
+# ==== NIỆM PHẬT ====
+
+niem_phat <- function() {
+  cat("\033[1;93m✨ Nam Mô A Di Đà Phật ✨\033[0m\n")
+  invisible(NULL)
+}
+
+done_msg <- function(msg = NULL) {
+  if (!is.null(msg) && nzchar(msg)) {
+    cat(msg, "\n")
+  }
+  niem_phat()
+  invisible(NULL)
+}
+
 # ==== BASIC HELPERS ====
 
 norm_path <- function(path = ".") {
@@ -43,7 +58,7 @@ pj <- function() {
 
 wd <- function() {
   out <- norm_path(getwd())
-  cat("📁 Working directory:", out, "\n")
+  done_msg(paste0("📁 Working directory: ", out))
   invisible(out)
 }
 
@@ -51,7 +66,7 @@ open_file <- function(path = ".") {
   path <- norm_path(path)
   
   if (!file.exists(path) && !dir.exists(path)) {
-    cat("❌ Không tồn tại:", path, "\n")
+    done_msg(paste0("❌ Không tồn tại: ", path))
     return(invisible(NULL))
   }
   
@@ -65,6 +80,7 @@ open_file <- function(path = ".") {
     system2("xdg-open", path)
   }
   
+  niem_phat()
   invisible(path)
 }
 
@@ -76,9 +92,9 @@ qr <- function() {
   status <- system2("quarto", "render")
   
   if (identical(status, 0L)) {
-    cat("✅ Render xong: docs/index.html\n")
+    done_msg("✅ Render xong: docs/index.html")
   } else {
-    cat("⚠️ Render có lỗi, xem thông báo phía trên.\n")
+    done_msg("⚠️ Render có lỗi, xem thông báo phía trên.")
   }
   
   invisible(status)
@@ -87,7 +103,9 @@ qr <- function() {
 qp <- function() {
   pj()
   cat("👀 quarto preview\n")
-  cat("Nhấn Ctrl + C để dừng preview.\n\n")
+  cat("Nhấn Ctrl + C để dừng preview.\n")
+  niem_phat()
+  cat("\n")
   system2("quarto", "preview")
 }
 
@@ -104,6 +122,7 @@ qclean <- function() {
 
 open_site <- function() {
   browseURL(.project_url)
+  niem_phat()
   invisible(.project_url)
 }
 
@@ -140,6 +159,7 @@ get_git_branch <- function() {
 gs <- function() {
   pj()
   system("git status")
+  niem_phat()
   invisible(NULL)
 }
 
@@ -153,13 +173,21 @@ gl <- function(n = 10) {
     c("log", "--oneline", "--graph", "--decorate", "-n", n)
   )
   
+  niem_phat()
   invisible(NULL)
 }
 
 gpull <- function() {
   pj()
-  system("git pull --rebase")
-  invisible(NULL)
+  status <- system("git pull --rebase")
+  
+  if (identical(status, 0L)) {
+    done_msg("✅ Đã git pull --rebase")
+  } else {
+    done_msg("⚠️ Pull có vấn đề, xem thông báo phía trên.")
+  }
+  
+  invisible(status)
 }
 
 gp <- function(msg = "update website", render_first = TRUE) {
@@ -189,23 +217,23 @@ gp <- function(msg = "update website", render_first = TRUE) {
   changed <- system("git diff --cached --quiet")
   
   if (identical(changed, 0L)) {
-    cat("📭 Không có thay đổi để commit.\n")
+    done_msg("📭 Không có thay đổi để commit.")
     return(invisible(NULL))
   }
   
   commit_status <- system(paste("git commit -m", shQuote(full_msg)))
   
   if (!identical(commit_status, 0L)) {
-    cat("⚠️ Commit lỗi.\n")
+    done_msg("⚠️ Commit lỗi.")
     return(invisible(NULL))
   }
   
   push_status <- system("git push")
   
   if (identical(push_status, 0L)) {
-    cat("🚀 Đã push:", full_msg, "\n")
+    done_msg(paste0("🚀 Đã push: ", full_msg))
   } else {
-    cat("⚠️ Commit xong nhưng push lỗi.\n")
+    done_msg("⚠️ Commit xong nhưng push lỗi.")
   }
   
   invisible(full_msg)
@@ -220,7 +248,7 @@ lsd <- function(path = ".") {
   x <- list.files(path, full.names = TRUE, no.. = TRUE)
   
   if (length(x) == 0) {
-    cat("📭 Không có file/thư mục.\n")
+    done_msg("📭 Không có file/thư mục.")
     return(invisible(NULL))
   }
   
@@ -234,6 +262,7 @@ lsd <- function(path = ".") {
   )
   
   print(df, row.names = FALSE)
+  niem_phat()
   invisible(df)
 }
 
@@ -241,11 +270,12 @@ ff <- function(pattern, path = ".") {
   x <- list.files(path, pattern = pattern, recursive = TRUE, full.names = TRUE, ignore.case = TRUE)
   
   if (length(x) == 0) {
-    cat("❌ Không tìm thấy:", pattern, "\n")
+    done_msg(paste0("❌ Không tìm thấy: ", pattern))
     return(invisible(NULL))
   }
   
   print(x)
+  niem_phat()
   invisible(x)
 }
 
@@ -253,7 +283,7 @@ recent <- function(path = ".", n = 10) {
   x <- list.files(path, recursive = TRUE, full.names = TRUE, no.. = TRUE)
   
   if (length(x) == 0) {
-    cat("📭 Không có file.\n")
+    done_msg("📭 Không có file.")
     return(invisible(NULL))
   }
   
@@ -269,6 +299,7 @@ recent <- function(path = ".", n = 10) {
   )
   
   print(df, row.names = FALSE)
+  niem_phat()
   invisible(df)
 }
 
@@ -304,4 +335,6 @@ if (interactive()) {
   cat("  lsd()             xem file/thư mục\n")
   cat("  recent()          xem file mới sửa gần đây\n")
   cat("  ff('keyword')     tìm file\n\n")
+  
+  niem_phat()
 }
